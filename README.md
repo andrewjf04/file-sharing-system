@@ -1,36 +1,41 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/TxSeEQdJ)
-# CSE330
-Andrew Feenstra 508428 andrewjf04
+# File Sharing Web Application
 
-David Kim 509768 dabouti
+## Overview
+A secure file sharing web application that enables users to upload, manage, and organize files within personal directories. The system was deployed on AWS EC2 and designed with a focus on usability, security, and efficient file handling.
 
-File Sharing Site Link: http://ec2-3-14-141-57.us-east-2.compute.amazonaws.com/~afeenstra/loginpage.php
+This project was developed as part of a computer science course and extended with additional features and enhancements.
 
-Credit: https://getbootstrap.com/
+---
 
-User Login Details: <b> admin, guest, user </b>
+## Features
+- User authentication system with session management
+- Upload, download, delete, and manage files
+- Personal directory for each authenticated user
+- File renaming functionality (custom-built feature)
+- Automatic file versioning:
+  - Prevents overwriting existing files
+  - Adds incremental prefixes (e.g., `1-file.txt`, `2-file.txt`)
+- Responsive UI built with Bootstrap
 
-<h1>Creative Project:</h1>
-1. Created a feature where users can directly rename their existing files from their personal directory. The renaming feature is shown below.
-   
-   ![image](https://github.com/cse330-spring-2024/module2-group-508428-509768/assets/112195598/3730d8ee-e817-4235-91bb-74a88cb46d8e)
+---
 
-2. When a user uploads a file with the same name as an existing file in the directory, rather than overwriting the old file or triggering an error, the system prefixes '1-' to the file name. Subsequent uploads with identical names result in an incrementing numerical prefix, such as '2-', '3-', and so on.
+## Tech Stack
+- **Backend:** PHP, Apache
+- **Frontend:** HTML, CSS, Bootstrap
+- **Infrastructure:** AWS EC2
+- **Server Environment:** Linux
 
-![image](https://github.com/cse330-spring-2024/module2-group-508428-509768/assets/112195598/d6a70964-5dd2-46ca-94ee-c5ead28d3c6b)
-  
-3. We implemented Bootstrap, a front-end framework, into our website design. We did some experiments with the website grids and the colors of our buttons and page layouts to ensure that our website is visually appealing.
+---
 
-In Bootstrap, these classes create rows and columns inside a container to align and organize the components. 
+## System Behavior
+- Each user is assigned a secure personal directory upon login
+- Uploaded files are stored and managed per user
+- Duplicate filenames are automatically handled via versioning logic
+- Users can rename, delete, and access their files through the interface
 
-![image](https://github.com/cse330-spring-2024/module2-group-508428-509768/assets/112195598/a429ee76-39b0-4933-af47-4697809186bd)
+---
 
-These classes styles the form and changes the color of the button to a color you want from the variety of options provided by Bootstrap. 
+## Notes
+This project was originally based on a structured academic framework and significantly extended with custom features, improved usability, and additional functionality.
 
-![image](https://github.com/cse330-spring-2024/module2-group-508428-509768/assets/112195598/567bdfb5-f815-4d64-8c1c-dd14d54a2426)
-
-
-
-
-
-   
+The application was deployed on AWS EC2 for testing and development purposes.
